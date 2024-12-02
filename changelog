@@ -1,3 +1,6 @@
+* Mon Dec 02 2024 Petr Lautrbach <lautrbach@redhat.com> - 41.26-2
+- Rebuild with SELinux Userspace 3.8
+
 * Tue Nov 19 2024 Zdenek Pytela <zpytela@redhat.com> - 41.26-1
 - [5/5][sync from 'mysql-selinux'] Add mariadb-backup
 - [4/5][sync from 'mysql-selinux'] Fix regex to also match '/var/lib/mysql/mysqlx.sock'
