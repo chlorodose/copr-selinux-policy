@@ -1,3 +1,48 @@
+* Tue Dec 17 2024 Zdenek Pytela <zpytela@redhat.com> - 41.27-1
+- Update ktlsh policy
+- Allow request-key to read /etc/passwd
+- Allow request-key to manage all domains' keys
+- Add support for the KVM guest memfd anon inodes
+- Allow auditctl signal auditd
+- Dontaudit systemd-coredump the sys_resource capability
+- Allow traceroute_t bind rawip sockets to unreserved ports
+- Fix the cups_read_pid_files() interface to use read_files_pattern
+- Allow virtqemud additional permissions for tmpfs_t blk devices
+- Allow virtqemud rw access to svirt_image_t chr files
+- Allow virtqemud rw and setattr access to fixed block devices
+- Label /etc/mdevctl.d/scripts.d with bin_t
+- Allow virtqemud open svirt_devpts_t char files
+- Allow virtqemud relabelfrom virt_log_t files
+- Allow svirt_tcg_t read virtqemud_t fifo_files
+- Allow virtqemud rw and setattr access to sev devices
+- Allow virtqemud directly read and write to a fixed disk
+- Allow virtqemud_t relabel virt_var_lib_t files
+- Allow virtqemud_t relabel virtqemud_var_run_t sock_files
+- Add gnome_filetrans_gstreamer_admin_home_content() interface
+- Label /dev/swradio, /dev/v4l-subdev, /dev/v4l-touch with v4l_device_t
+- Make bootupd_t permissive
+- Allow init_t nnp domain transition to locate_t
+- allow gdm and iiosensorproxy talk to each other via D-bus
+- Allow systemd-journald getattr nsfs files
+- Allow sendmail to map mail server configuration files
+- Allow procmail to read mail aliases
+- Allow cifs.idmap helper to set attributes on kernel keys
+- Allow irqbalance setpcap capability in the user namespace
+- Allow sssd_selinux_manager_t the setcap process permission
+- Allow systemd-sleep manage efivarfs files
+- Allow systemd-related domains getattr nsfs files
+- Allow svirt_t the sys_rawio capability
+- Allow alsa watch generic device directories
+- Move systemd-homed interfaces to seperate optional_policy block
+- Update samba-bgqd policy
+- Update virtlogd policy
+- Allow svirt_t the sys_rawio capability
+- Allow qemu-ga the dac_override and dac_read_search capabilities
+- Allow bacula execute container in the container domain
+- Allow httpd get attributes of dirsrv unit files
+- Allow samba-bgqd read cups config files
+- Add label rshim_var_run_t for /run/rshim.pid
+
 * Mon Dec 02 2024 Petr Lautrbach <lautrbach@redhat.com> - 41.26-2
 - Rebuild with SELinux Userspace 3.8
 
