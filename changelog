@@ -1,3 +1,20 @@
+* Fri Jan 03 2025 Zdenek Pytela <zpytela@redhat.com> - 41.28-1
+- Update virtqemud policy regarding the svirt_tcg_t domain
+- Allow virtqemud domain transition on numad execution
+- Support virt live migration using ssh
+- Allow virtqemud permissions needed for live migration
+- Allow virtqemud the getpgid process permission
+- Allow virtqemud manage nfs dirs when virt_use_nfs boolean is on
+- Allow virtqemud relabelfrom virt_log_t files
+- Allow virtqemud relabel tun_socket
+- Add policy for systemd-import-generator
+- Confine vsftpd systemd system generator
+- Allow virtqemud read and write sgx_vepc devices
+- Allow systemd-networkd list cgroup directories
+- Allow xdm dbus chat with power-profiles-daemon
+- Allow ssh_t read systemd config files
+- Add Valkey rules to Redis module
+
 * Tue Dec 17 2024 Zdenek Pytela <zpytela@redhat.com> - 41.27-1
 - Update ktlsh policy
 - Allow request-key to read /etc/passwd
