@@ -1,3 +1,21 @@
+* Wed Jan 15 2025 Zdenek Pytela <zpytela@redhat.com> - 41.29-1
+- Allow virtqemud domain transition to nbdkit
+- Add nbdkit interfaces defined conditionally
+- Allow samba-bgqd connect to cupsd over an unix domain stream socket
+- Confine the switcheroo-control service
+- Allow svirt_t read sysfs files
+- Add rhsmcertd interfaces
+- Add the ssh_exec_sshd() interface
+- Add the gpg_domtrans_agent() interface
+- Label /usr/bin/dnf5 with rpm_exec_t
+- Label /dev/pmem[0-9]+ with fixed_disk_device_t
+- allow kdm to create /root/.kde/ with correct label
+- Change /usr/sbin entries to use /usr/bin or remove them
+- Allow systemd-homed get filesystem quotas
+- Allow login_userdomain getattr nsfs files
+- Allow virtqemud send a generic signal to the ssh client domain
+- Dontaudit request-key read /etc/passwd
+
 * Fri Jan 03 2025 Zdenek Pytela <zpytela@redhat.com> - 41.28-1
 - Update virtqemud policy regarding the svirt_tcg_t domain
 - Allow virtqemud domain transition on numad execution
