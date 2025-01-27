@@ -1,3 +1,21 @@
+* Mon Jan 27 2025 Zdenek Pytela <zpytela@redhat.com> - 41.30-1
+- Allow systemd-generator connect to syslog over a unix stream socket
+- Allow virtqemud manage fixed disk device nodes
+- Allow iio-sensor-proxy connect to syslog over a unix stream socket
+- Allow virtstoraged write to sysfs files
+- Allow power-profiles-daemon write sysfs files
+- Update iiosensorproxy policy
+- Allow pcmsensor write nmi_watchdog state information
+- Label /proc/sys/kernel/nmi_watchdog with sysctl_nmi_watchdog_t
+- Allow virtnodedev create /etc/mdevctl.d/scripts.d with bin_t type
+- Add the gpg_read_user_secrets() interface
+- Allow gnome-remote-desktop read resolv.conf
+- Update switcheroo policy
+- Allow nfsidmap connect to systemd-homed over a unix socket
+- Add the auth_write_motd_var_run_files() interface
+- Add the bind_exec_named_checkconf() interface
+- Add the virt_exec_virsh() interface
+
 * Wed Jan 15 2025 Zdenek Pytela <zpytela@redhat.com> - 41.29-1
 - Allow virtqemud domain transition to nbdkit
 - Add nbdkit interfaces defined conditionally
