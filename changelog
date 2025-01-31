@@ -1,3 +1,16 @@
+* Fri Jan 31 2025 Zdenek Pytela <zpytela@redhat.com> - 41.31-1
+- Allow snapperd execute systemctl in the caller domain
+- Allow svirt_tcg_t to connect to nbdkit over a unix stream socket
+- Allow iio-sensor-proxy read iio devices
+- Label /dev/iio:device[0-9]+ devices
+- Allow systemd-coredump the sys_admin capability
+- Allow apcupsd's apccontrol to send messages using wall
+- contrib/thumb: also allow per-user thumbnailers
+- contrib/thumb: fix thunar thumbnailer (rhbz#2315893)
+- Allow virt_domain to use pulseaudio - conditional
+- Allow pcmsensor read nmi_watchdog state information
+- Allow init_t nnp domain transition to gssproxy_t
+
 * Mon Jan 27 2025 Zdenek Pytela <zpytela@redhat.com> - 41.30-1
 - Allow systemd-generator connect to syslog over a unix stream socket
 - Allow virtqemud manage fixed disk device nodes
