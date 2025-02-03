@@ -29,8 +29,8 @@
 %_file_custom_defined_booleans %{_selinux_store_policy_path}/rpmbooleans.custom
 %_file_custom_defined_booleans_tmp %{_selinux_store_policy_path}/rpmbooleans.custom.tmp
 
-# %selinux_requires
-%selinux_requires \
+# %selinux_requires_min - minimal required set of packages for deploying a policy module
+%selinux_requires_min \
 Requires: selinux-policy >= %{_selinux_policy_version} \
 BuildRequires: pkgconfig(systemd) \
 BuildRequires: selinux-policy \
@@ -38,11 +38,12 @@ BuildRequires: selinux-policy-devel \
 Requires(post): selinux-policy-base >= %{_selinux_policy_version} \
 Requires(post): libselinux-utils \
 Requires(post): policycoreutils \
-%if 0%{?fedora} || 0%{?rhel} > 7\
+%{nil}
+
+# %selinux_requires
+%selinux_requires \
+%selinux_requires_min \
 Requires(post): policycoreutils-python-utils \
-%else \
-Requires(post): policycoreutils-python \
-%endif \
 %{nil}
 
 # %selinux_modules_install [-s <policytype>] [-p <modulepriority>] module [module]...
@@ -116,6 +117,7 @@ fi \
 %{nil}
 
 # %selinux_set_booleans [-s <policytype>] boolean [boolean]...
+# Requires policycoreutils-python-utils (or policycoreutils-python)
 %selinux_set_booleans("s:") \
 if [ -e /etc/selinux/config ]; then \
   . /etc/selinux/config \
@@ -157,6 +159,7 @@ fi \
 %{nil}
 
 # %selinux_unset_booleans [-s <policytype>] boolean [boolean]...
+# Requires policycoreutils-python-utils (or policycoreutils-python)
 %selinux_unset_booleans("s:") \
 if [ -e /etc/selinux/config ]; then \
   . /etc/selinux/config \
