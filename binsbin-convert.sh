@@ -59,6 +59,10 @@ done < ${EXTRA_BINSBIN_ENTRIES_WITHDUP} > ${EXTRA_BINSBIN_ENTRIES}
 # Change /usr/sbin to /usr/bin
 sed -i 's|^/usr/sbin|/usr/bin|' ${EXTRA_BINSBIN_ENTRIES}
 
+# Exception handling: types changed during the same transaction
+sed -i '/^\/usr\/bin\/tlshd/d' ${EXTRA_BINSBIN_ENTRIES}
+sed -i '/^\/usr\/bin\/pcm-sensor-server/d' ${EXTRA_BINSBIN_ENTRIES}
+
 # Change format to cil
 sed -i 's/^\([^ ]\+\) \([^-]\)/\1 any \2/' ${EXTRA_BINSBIN_ENTRIES}
 sed -i 's/^\([^ ]\+\) -- /\1 file /' ${EXTRA_BINSBIN_ENTRIES}

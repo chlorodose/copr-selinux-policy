@@ -1,3 +1,16 @@
+* Wed Feb 05 2025 Zdenek Pytela <zpytela@redhat.com> - 41.32-1
+- Allow virtqemud use hostdev usb devices conditionally
+- Allow virtqemud map svirt_image_t plain files
+- Allow virtqemud work with nvdimm devices
+- Support saving and restoring a VM to/from a block device
+- Allow virtnwfilterd dbus chat with firewalld
+- Dontaudit systemd-logind remove all files
+- Add the files_dontaudit_read_all_dirs() interface
+- Add the files_dontaudit_delete_all_files() interface
+- Allow rhsmcertd notify virt-who
+- Allow irqbalance to run unconfined scripts conditionally
+- Fix binsbin-convert.sh to handle exceptions
+
 * Fri Jan 31 2025 Zdenek Pytela <zpytela@redhat.com> - 41.31-1
 - Allow snapperd execute systemctl in the caller domain
 - Allow svirt_tcg_t to connect to nbdkit over a unix stream socket
