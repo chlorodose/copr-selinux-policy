@@ -1,3 +1,22 @@
+* Fri Feb 07 2025 Zdenek Pytela <zpytela@redhat.com> - 41.33-1
+- Allow systemd-networkd the sys_admin capability
+- Update systemd-networkd policy in systemd v257
+- Separate insights-core from insights-client
+- Removed unused insights_client interfaces calls from other modules
+- Update policy for insights_client wrt new rules for insights_core_t
+- Add policy for insights-core
+- Allow systemd-networkd use its private tmpfs files
+- Allow boothd connect to systemd-machined over a unix socket
+- Update init_explicit_domain() interface
+- Allow tlp to read/write nmi_watchdog state information
+- Allow power-profiles-daemon the bpf capability
+- Allow svirt_t to connect to nbdkit over a unix stream socket
+- Update ktlshd policy to read /proc/keys and domain keyrings
+- Allow virt_domain read hardware state information unconditionally
+- Allow init mounton crypto sysctl files
+- Rename winbind_rpcd_* types to samba_dcerpcd_*
+- Support peer-to-peer migration of vms using ssh
+
 * Wed Feb 05 2025 Zdenek Pytela <zpytela@redhat.com> - 41.32-1
 - Allow virtqemud use hostdev usb devices conditionally
 - Allow virtqemud map svirt_image_t plain files
