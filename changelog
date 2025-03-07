@@ -1,3 +1,16 @@
+* Fri Mar 07 2025 Zdenek Pytela <zpytela@redhat.com> - 41.34-1
+- Add context for plymouth debug log files
+- Allow rlimit inheritance for domains transitioning to local_login_t
+- Update insights-core policy
+- Allow insights-core map all non-security files
+- Allow insights-core map audit config and log files
+- Allow insights-client manage insights_client_var_log_t files
+- Remove duplicate dev_rw_dma_dev(xdm_t)
+- Allow thumbnailer read and write the dma device
+- Allow named_filetrans_domain filetrans raid/mdadm named content
+- Allow afterburn to mount and read config drives
+- Allow mptcpd the net_admin capability
+
 * Fri Feb 07 2025 Zdenek Pytela <zpytela@redhat.com> - 41.33-1
 - Allow systemd-networkd the sys_admin capability
 - Update systemd-networkd policy in systemd v257
