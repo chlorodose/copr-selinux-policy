@@ -1,3 +1,21 @@
+* Fri Mar 28 2025 Zdenek Pytela <zpytela@redhat.com> - 41.35-1
+- Update INSTALL to describe necessary steps to build it
+- Rename the default policy to fedora-selinux
+- Update COPYING to the latest version of GPLv2
+- Allow traceroute_t bind rawip sockets to unreserved ports
+- Revert "Allow traceroute_t bind rawip sockets to unreserved ports"
+- Change the bootc system generator name to bootc-systemd-generator
+- Allow mpd use the io_uring API
+- Confine tuned-ppd
+- Add the switcheroo module
+- Label wine's windows libraries as textrel_shlib_t
+- Allow systemd domains write global pressure stall information
+- Add label and interfaces for kernel PSI files
+- Update bootupd policy
+- Update ktls policy
+- Add policy for systemd-bootc-generator
+- Allow blueman the kill capability
+
 * Fri Mar 07 2025 Zdenek Pytela <zpytela@redhat.com> - 41.34-1
 - Add context for plymouth debug log files
 - Allow rlimit inheritance for domains transitioning to local_login_t
