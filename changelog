@@ -1,3 +1,18 @@
+* Mon Apr 07 2025 Zdenek Pytela <zpytela@redhat.com> - 41.36-1
+- Confine systemd-factory-reset system generator
+- Allow systemd debug generator read tmpfs files
+- Allow gnome-shell get attributes of systemd inhibit pipes
+- Allow tuned-ppd watch sysfs directories
+- Fix the storage_rw_inherited_removable_device() interface
+- Allow sadc read global pressure stall information
+- Allow virtqemud read sblim-gatherd process state
+- Allow switcheroo-control dbus chat with xdm
+- Fix typo in calling unconfined_dbus_chat for switcheroo-control
+- Allow sysadm_t to write to /dev/kmsg
+- Allow init_t nnp domain transition to pcscd_t
+- Fix the genfscon statement for pidfs filesystem
+- Allow tuned-ppd dbus chat with xdm
+
 * Fri Mar 28 2025 Zdenek Pytela <zpytela@redhat.com> - 41.35-1
 - Update INSTALL to describe necessary steps to build it
 - Rename the default policy to fedora-selinux
