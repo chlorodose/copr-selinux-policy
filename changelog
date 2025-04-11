@@ -1,3 +1,17 @@
+* Fri Apr 11 2025 Zdenek Pytela <zpytela@redhat.com> - 41.37-1
+- Allow tuned-ppd read sssd public files
+- Allow tuned-ppd watch_reads sysfs directories
+- Confine /usr/lib/systemd/systemd-user-runtime-dir
+- Revert "Dontaudit systemd-logind remove all files"
+- Make bootupd use bootupd_tmp_t as its private type for files in /tmp
+- Label SetroubleshootPrivileged.py with setroubleshootd_exec_t
+- Allow power-profiles-daemon watch sysfs directories
+- systemd: allow reading /dev/cpu/0/msr
+- Update the pcmsensor policy
+- Allow chronyd-restricted sendto to chronyc
+- Allow system_dbusd_t r/w unix stream sockets of unconfined_service_t
+- Allow dovecot-deliver read mail aliases
+
 * Mon Apr 07 2025 Zdenek Pytela <zpytela@redhat.com> - 41.36-1
 - Confine systemd-factory-reset system generator
 - Allow systemd debug generator read tmpfs files
