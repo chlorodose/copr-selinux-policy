@@ -1,3 +1,16 @@
+* Thu Apr 17 2025 Zdenek Pytela <zpytela@redhat.com> - 41.38-1
+- Allow init and login_pgm connect to systemd-logind over a unix socket
+- Allow login_userdomain read pressure stall information
+- Allow systemd-journald create and use vsock socket
+- Update systemd-pcrextend policy
+- Allow systemd watch/watch_reads usb ttys
+- Update coreos-installer-generator policy
+- Update systemd-homed policy
+- Allow systemd-user-runtime-dir get/set tmpfs quotas
+- Allow systemd-rfkill read nsfs files
+- Dontaudit bootc-systemd-generator search sssd lib directories
+- Allow systemd-user-runtime-dir delete gnome homedir content
+
 * Fri Apr 11 2025 Zdenek Pytela <zpytela@redhat.com> - 41.37-1
 - Allow tuned-ppd read sssd public files
 - Allow tuned-ppd watch_reads sysfs directories
