@@ -1,3 +1,22 @@
+* Wed Apr 30 2025 Zdenek Pytela <zpytela@redhat.com> - 41.39-1
+- Allow collectd accept and listen to tcp sockets
+- Allow init_t nnp domain transition to redis_t
+- Allow tlshd read network sysctls
+- Allow NetworkManager create and use icmp_socket
+- Allow varnishd execute the prlimit64() syscall
+- Allow rhsmcertd connect to systemd-machined
+- Allow virt_domain write to virt_image_t files
+- Allow system-dbusd list systemd-machined directories
+- Allow asterisk read network sysctls
+- Allow virtstoraged fsetid capability
+- Allow xdm watch a mnt_t directory
+- Allow collectd bind TCP sockets to the collectd port
+- Allow virtqemud relabel from tmpfs lnk files
+- Allow gnome-remote-desktop additional sockets permissions
+- Update insights-core policy
+- Update systemd-homed policy
+- Allow xenstored_t manage xend_var_lib_t files (bsc#1228540)
+
 * Thu Apr 17 2025 Zdenek Pytela <zpytela@redhat.com> - 41.38-1
 - Allow init and login_pgm connect to systemd-logind over a unix socket
 - Allow login_userdomain read pressure stall information
