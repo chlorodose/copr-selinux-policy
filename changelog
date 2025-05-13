@@ -1,3 +1,16 @@
+* Tue May 13 2025 Zdenek Pytela <zpytela@redhat.com> - 41.40-1
+- Add missing permissions for ftpd_anon_write to manage NFS directories
+- Add missing permissions for ftpd_anon_write to manage CIFS directories
+- Allow nut-upsmon write systemd inhibit pipes
+- Allow systemd-user-runtime-dir connect to systemd-userdbd over a unix socket
+- Remove permissive domain for systemd_vsftpd_generator_t
+- Change generator-specific rules to apply to systemd_generator
+- Define file equivalency for /var/etc
+- Allow tuned-ppd create ppd_base_profile with a file transition
+- Allow lldpd connect to systemd-homed over a unix socket
+- Allow sysadm_sudo_t signal rpm script
+- Fix the "/var/cache/systemd/home(/.*)?" regex
+
 * Wed Apr 30 2025 Zdenek Pytela <zpytela@redhat.com> - 41.39-1
 - Allow collectd accept and listen to tcp sockets
 - Allow init_t nnp domain transition to redis_t
