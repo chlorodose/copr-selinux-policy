@@ -1,3 +1,21 @@
+* Thu May 22 2025 Zdenek Pytela <zpytela@redhat.com> - 41.41-1
+- Allow mdadm nosuid_transition
+- Label plasma user service files as xdm_unit_file_t.
+- Revert "Allow systemd-homed to start services."
+- Allow virtstoraged write qemu runtime files
+- Allow virtqemud read/write/setattr input event devices
+- Allow systemd create journal pid files
+- Allow networkmanager send a general signal to iptables
+- Allow syslogd watch syslog_conf_t directories
+- Allow systemd-machined work with its private tmp and tmpfs files
+- Allow geoclue read virt lib files
+- Fix files_dontaudit_delete_all_files()
+- Label /run/polkit-1 with policykit_var_run_t
+- Label /dev/diag as diagnostic_device_t
+- Allow systemd-homed to start services.
+- Allow named_t to read NetworkManager's runtime files
+- Improve README* documentation
+
 * Tue May 13 2025 Zdenek Pytela <zpytela@redhat.com> - 41.40-1
 - Add missing permissions for ftpd_anon_write to manage NFS directories
 - Add missing permissions for ftpd_anon_write to manage CIFS directories
