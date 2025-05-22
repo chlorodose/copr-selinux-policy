@@ -205,7 +205,7 @@ rm -f %{buildroot}%{_sharedstatedir}/selinux/%1/active/*.linked \
 %verify(not md5 size mtime) %{_sysconfdir}/selinux/%1/policy/policy.%{POLICYVER} \
 %{_sysconfdir}/selinux/%1/.policy.sha512 \
 %dir %{_sysconfdir}/selinux/%1/contexts \
-%config %{_sysconfdir}/selinux/%1/contexts/customizable_types \
+%config %verify(not md5 size mtime) %{_sysconfdir}/selinux/%1/contexts/customizable_types \
 %config(noreplace) %{_sysconfdir}/selinux/%1/contexts/securetty_types \
 %config(noreplace) %{_sysconfdir}/selinux/%1/contexts/dbus_contexts \
 %config %{_sysconfdir}/selinux/%1/contexts/x_contexts \
