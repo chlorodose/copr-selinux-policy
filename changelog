@@ -1,3 +1,14 @@
+* Tue Jun 03 2025 Zdenek Pytela <zpytela@redhat.com> - 41.42-1
+- Drop config for /run/random-seed
+- Update file location for systemd random-seed file
+- Allow tomcat execute cracklib-check with a domain transition
+- Allow sssd watch lib dirs
+- Confine systemd-hibernate-resume
+- Allow login_userdomain create /run/tlog directory with user_tmp_t
+- Allow login_pgm read filesystem sysctls
+- Allow gconfd connect to system dbus
+- Allow NetworkManager manage NetworkManager_etc_rw_t symlinks
+
 * Thu May 22 2025 Zdenek Pytela <zpytela@redhat.com> - 41.41-1
 - Allow mdadm nosuid_transition
 - Label plasma user service files as xdm_unit_file_t.
