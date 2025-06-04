@@ -1,3 +1,10 @@
+* Wed Jun 04 2025 Zdenek Pytela <zpytela@redhat.com> - 41.43-1
+- Allow nmbd read network sysctls
+- Allow iio-sensor-proxy sendto to journald over a unix datagram socket
+- Allow logrotate stop all systemd services
+- systemd: rework systemd_manage_random_seed
+- Allow tuned-ppd connect to sssd over a unix stream socket
+
 * Tue Jun 03 2025 Zdenek Pytela <zpytela@redhat.com> - 41.42-1
 - Drop config for /run/random-seed
 - Update file location for systemd random-seed file
