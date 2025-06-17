@@ -1,3 +1,19 @@
+* Tue Jun 17 2025 Zdenek Pytela <zpytela@redhat.com> - 41.44-1
+- virt: allow QEMU use of the qgs daemon for attestation
+- qgs: add contrib module for TDX "qgs" daemon
+- kernel: add interfaces for using SGX enclaves
+- Define file equivalency for /usr/etc
+- Allow mongod to receive pressure stall information
+- Dontaudit systemd_generator read sssd public files
+- Allow plymouthd read/write input event devices
+- Label 99-nvme-nbft-connect.sh with NetworkManager_dispatcher_nvme_script_t
+- Allow systemd-user-runtime-dir sendto to syslogd
+- Remove pcp module
+- Update irqbalance policy for using unconfined scripts
+- Allow utempter use terminal multiplexor
+- Allow virtqemud execute ovs-vsctl with a domain transition
+- Update the files_search_mnt() interface
+
 * Wed Jun 04 2025 Zdenek Pytela <zpytela@redhat.com> - 41.43-1
 - Allow nmbd read network sysctls
 - Allow iio-sensor-proxy sendto to journald over a unix datagram socket
