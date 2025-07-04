@@ -1,3 +1,6 @@
+* Fri Jul 04 2025 Petr Lautrbach <lautrbach@redhat.com> - 41.44-2
+- Rebuilt with SELinux userspace 3.9-rc2 release
+
 * Tue Jun 17 2025 Zdenek Pytela <zpytela@redhat.com> - 41.44-1
 - virt: allow QEMU use of the qgs daemon for attestation
 - qgs: add contrib module for TDX "qgs" daemon
