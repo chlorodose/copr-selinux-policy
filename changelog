@@ -1,3 +1,12 @@
+* Tue Jul 15 2025 Zdenek Pytela <zpytela@redhat.com> - 42.1-1
+- Update systemd-generators policy
+- Allow plymouthd_t read proc files of systemd_passwd_agent (bsc#1245470)
+- Allow insights-client file transition for files in /var/tmp
+- Allow tuned-ppd manage tuned log files
+- Allow systemd-coredump mount on tmpfs filesystems
+- Update sssd_dontaudit_read_public_files()
+- Allow zram-generator raw read fixed disk device
+
 * Fri Jul 04 2025 Zdenek Pytela <zpytela@redhat.com> - 41.45-1
 - Add fs_write_cgroup_dirs() and fs_setattr_cgroup_dirs() interfaces
 - Allow irqbalance execute shell if irqbalance_run_unconfined is on
