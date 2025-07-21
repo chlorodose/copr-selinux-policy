@@ -1,3 +1,26 @@
+* Mon Jul 21 2025 Zdenek Pytela <zpytela@redhat.com> - 42.2-1
+- Allow virtqemud_t use its private tmpfs files (bsc#1242998)
+- Allow virtqemud_t setattr to /dev/userfaultfd (bsc#1242998)
+- Allow virtqemud_t read and write /dev/ptmx (bsc#1242998)
+- Extend virtqemud_t tcp_socket permissions (bsc#1242998)
+- Allow virtqemud_t to read and write generic pty (bsc#1242998)
+- Allow systemd-importd create and unlink init pid socket
+- Allow virtqemud handle virt_content_t chr files
+- Allow svirt read virtqemud fifo files
+- All sblim-sfcbd the dac_read_search capability
+- Allow sblim domain read systemd session files
+- Allow sblim-sfcbd execute dnsdomainname
+- Confine nfs-server generator
+- Allow systemd-timedated start/stop timemaster services
+- Allow "hostapd_cli ping" run as a systemd service
+- Allow power-profiles-daemon get attributes of filesystems with extended attributes
+- Allow 'oomctl dump' to interact with systemd-oomd
+- Basic functionality for systemd-oomd
+- Basic enablement for systemd-oomd
+- Allow samba-bgqd send to smbd over a unix datagram socket
+- Update kernel_secretmem_use()
+- Add the file/watch_mountns permission
+
 * Tue Jul 15 2025 Zdenek Pytela <zpytela@redhat.com> - 42.1-1
 - Update systemd-generators policy
 - Allow plymouthd_t read proc files of systemd_passwd_agent (bsc#1245470)
