@@ -1,3 +1,18 @@
+* Mon Jul 28 2025 Zdenek Pytela <zpytela@redhat.com> - 42.3-1
+- Allow virtqemud write to sysfs files
+- Allow irqbalance search sssd lib directories
+- Allow samba-dcerpcd send sigkills to passwd
+- Allow systemd-oomd watch dbus pid sock files
+- Allow some confined users read and map generic log files
+- Allow login_userdomain watch the /run/log/journal directory
+- Allow login_userdomain dbus chat with tuned-ppd
+- Allow login_userdomain dbus chat with switcheroo-control
+- Allow userdomain to connect to systemd-oomd over a unix socket
+- Add insights_client_delete_lib_dirs() interface
+
+* Fri Jul 25 2025 Fedora Release Engineering <releng@fedoraproject.org> - 42.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_43_Mass_Rebuild
+
 * Mon Jul 21 2025 Zdenek Pytela <zpytela@redhat.com> - 42.2-1
 - Allow virtqemud_t use its private tmpfs files (bsc#1242998)
 - Allow virtqemud_t setattr to /dev/userfaultfd (bsc#1242998)
