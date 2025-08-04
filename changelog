@@ -1,3 +1,20 @@
+* Mon Aug 04 2025 Zdenek Pytela <zpytela@redhat.com> - 42.4-1
+- Allow unconfined user a file transition for creating sudo log directory
+- Allow virtqemud read/write inherited dri devices
+- Allow xdm_t create user namespaces
+- Update policy for login_userdomain
+- Add ppd_base_profile to file transition to get tuned_rw_etc_t type
+- Update policy for bootupd
+- Allow logwatch work with opensmtpd
+- Update dovecot policy for dovecot 2.4.1
+- Allow ras-mc-ctl write to sysfs files
+- Allow anaconda-generator get attributes of all filesystems
+- Add the rhcd_rw_fifo_files() interface
+- Allow systemd-coredump the sys_chroot capability
+- Allow hostapd write to socket files in /tmp
+- Recognize /var/home as an alternate path for /home
+- Label /var/lib/lastlog with lastlog_t
+
 * Mon Jul 28 2025 Zdenek Pytela <zpytela@redhat.com> - 42.3-1
 - Allow virtqemud write to sysfs files
 - Allow irqbalance search sssd lib directories
