@@ -1,3 +1,14 @@
+* Tue Aug 12 2025 Zdenek Pytela <zpytela@redhat.com> - 42.6-1
+- Allow virtqemud start a vm which uses nbdkit
+- Add nbdkit_signal() and nbdkit_signull() interfaces
+- Fix insights_client interfaces names
+- Add insights_core and insights_client interfaces
+- dist/targeted/modules.conf: enable slrnpull module
+- Allow bootupd delete symlinks in the /boot directory
+- Allow systemd-coredumpd capabilities in the user namespace
+- Allow openvswitch read virtqemud process state
+- Allow systemd-networkd to create leases directory
+
 * Fri Aug 08 2025 Zdenek Pytela <zpytela@redhat.com> - 42.5-1
 - Apply generator template to selinux-autorelabel generator
 - Support virtqemud handle hotplug hostdev devices
