@@ -1,3 +1,16 @@
+* Fri Aug 29 2025 Zdenek Pytela <zpytela@redhat.com> - 42.7-1
+- Label /usr/lib/systemd/systemd-ssh-issue with systemd_ssh_issue_exec_t
+- Allow stalld map sysfs files
+- Allow NetworkManager-dispatcher-winbind get pidfs attributes
+- Allow openvpn create and use generic netlink socket
+- policy_capabilities: remove estimated from released versions
+- policy_capabilities: add stub for userspace_initial_context
+- add netlink_xperm policy capability and nlmsg permission definitions
+- policy_capabilities: add ioctl_skip_cloexec
+- selinux-policy: add allow rule for tuned_ppd_t
+- selinux-policy: add allow rule for switcheroo_control_t
+- Label /run/audit with auditd_var_run_t
+
 * Tue Aug 12 2025 Zdenek Pytela <zpytela@redhat.com> - 42.6-1
 - Allow virtqemud start a vm which uses nbdkit
 - Add nbdkit_signal() and nbdkit_signull() interfaces
