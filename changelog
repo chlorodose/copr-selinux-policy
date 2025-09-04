@@ -1,3 +1,15 @@
+* Thu Sep 04 2025 Zdenek Pytela <zpytela@redhat.com> - 42.8-1
+- Allow gdm create /etc/.pwd.lock with a file transition
+- Allow gdm bind a socket in the /run/systemd/userdbd directory
+- Allow nsswitch_domain connect to xdm over a unix domain socket
+- Allow systemd homed getattr all tmpfs files (bsc#1240883)
+- Allow systemd (PID 1) create lastlog entries
+- Allow systemd_homework_t transition pid files to lvm_var_run_t (bsc#1240883)
+- Allow gnome-remote-desktop speak with tabrmd over dbus (bsc#1244573)
+- Allow nm-dispatcher iscsi and sendmail plugins get pidfs attributes
+- Allow systemd-oomd watch tmpfs dirs
+- Allow chronyc the setgid and setuid capabilities
+
 * Fri Aug 29 2025 Zdenek Pytela <zpytela@redhat.com> - 42.7-1
 - Label /usr/lib/systemd/systemd-ssh-issue with systemd_ssh_issue_exec_t
 - Allow stalld map sysfs files
