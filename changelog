@@ -1,3 +1,14 @@
+* Mon Sep 15 2025 Zdenek Pytela <zpytela@redhat.com> - 42.9-1
+- Fix systemd_manage_unit_symlinks() interface definition
+- Support coreos installation methods
+- Add a new type for systemd-ssh-issue PID files
+- Allow gnome-remote-desktop connect to unreserved ports
+- Allow mdadm the CAP_SYS_PTRACE capability
+- Allow iptables manage its private fifo_files in /tmp
+- Allow auditd manage its private run dirs
+- Revert "Allow virt_domain write to virt_image_t files"
+- Exclude tabrmd.if from interfaces list
+
 * Thu Sep 04 2025 Zdenek Pytela <zpytela@redhat.com> - 42.8-1
 - Allow gdm create /etc/.pwd.lock with a file transition
 - Allow gdm bind a socket in the /run/systemd/userdbd directory
