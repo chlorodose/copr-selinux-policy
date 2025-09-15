@@ -131,6 +131,7 @@ and some additional files.
 %dir %{_datadir}/selinux/devel/include
 %{_datadir}/selinux/devel/include/*
 %exclude %{_datadir}/selinux/devel/include/contrib/container.if
+%exclude %{_datadir}/selinux/devel/include/contrib/tabrmd.if
 %dir %{_datadir}/selinux/devel/html
 %{_datadir}/selinux/devel/html/*html
 %{_datadir}/selinux/devel/html/*css
