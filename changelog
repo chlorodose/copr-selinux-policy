@@ -1,3 +1,14 @@
+* Wed Sep 24 2025 Zdenek Pytela <zpytela@redhat.com> - 42.11-1
+- Allow nfs generator create and use netlink sockets
+- Conditionally allow virt guests to read certificates in user home directories
+- xenstored_t needs CAP_SYS_ADMIN for XENSTORETYPE=domain (bsc#1247875)
+- Allow nfs-generator create and use udp sockets
+- Allow kdump search kdumpctl_tmp_t directories
+- Allow init open and read user tmp files
+- Fix the systemd_logind_stream_connect() interface
+- Allow staff and sysadm execute iotop using sudo
+- Allow sudodomains connect to systemd-logind over a unix socket
+
 * Tue Sep 16 2025 Zdenek Pytela <zpytela@redhat.com> - 42.10-1
 - Add default contexts for sshd-seesion
 - Define types for new openssh executables
