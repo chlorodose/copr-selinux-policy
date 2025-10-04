@@ -1,3 +1,12 @@
+* Sat Oct 04 2025 Zdenek Pytela <zpytela@redhat.com> - 42.12-1
+- Adjust guest and xguest users policy for sshd-session
+- Allow valkey-server create and use netlink_rdma_socket
+- Allow blueman get attributes of filesystems with extended attributes
+- Update files_search_base_file_types()
+- Allow geoclue get attributes of the /dev/shm filesystem
+- Allow apcupsd get attributes of the /dev/shm filesystem
+- Allow sshd-session read cockpit pid files
+
 * Wed Sep 24 2025 Zdenek Pytela <zpytela@redhat.com> - 42.11-1
 - Allow nfs generator create and use netlink sockets
 - Conditionally allow virt guests to read certificates in user home directories
