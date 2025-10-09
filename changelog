@@ -1,3 +1,6 @@
+* Mon Oct 20 2025 Michael Catanzaro <mcatanzaro@redhat.com> - 42.13-2
+- Fix unexpanded macro in selinux_requires
+
 * Tue Oct 14 2025 Zdenek Pytela <zpytela@redhat.com> - 42.13-1
 - Allow sshd-auth read generic proc files
 - Allow sshd-auth read and write user domain ptys

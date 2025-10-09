@@ -34,7 +34,7 @@
 
 # %selinux_requires_min - minimal required set of packages for deploying a policy module
 %selinux_requires_min \
-Requires: selinux-policy >= %{%_selinux_policy_stable_version} \
+Requires: selinux-policy >= %{_selinux_policy_stable_version} \
 Recommends: selinux-policy >= %{_selinux_policy_version} \
 BuildRequires: pkgconfig(systemd) \
 BuildRequires: selinux-policy \
