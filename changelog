@@ -1,3 +1,14 @@
+* Tue Oct 14 2025 Zdenek Pytela <zpytela@redhat.com> - 42.13-1
+- Allow sshd-auth read generic proc files
+- Allow sshd-auth read and write user domain ptys
+- Allow logwatch read and write sendmail unix stream sockets
+- Allow logwatch domain transition on rpm execution
+- Allow thumb_t mounton its private tmpfs files
+- Allow thumb_t create permission in the user namespace
+- Allow corenet_unconfined_type name_bind to icmp_socket
+- Allow systemd-networkd to manage systemd_networkd_var_lib_t files
+- Allow sshd-session get attributes of sshd vsock socket
+
 * Sat Oct 04 2025 Zdenek Pytela <zpytela@redhat.com> - 42.12-1
 - Adjust guest and xguest users policy for sshd-session
 - Allow valkey-server create and use netlink_rdma_socket
