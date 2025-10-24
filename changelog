@@ -1,3 +1,15 @@
+* Fri Oct 24 2025 Zdenek Pytela <zpytela@redhat.com> - 42.14-1
+- Define file equivalency for /var/opt
+- Allow virtnodedev_t the perfmon capability
+- Allow nut_upsdrvctl_t the sys_ptrace capability
+- Label /usr/lib/systemd/user/graphical-session-pre.target with xdm_unit_file_t
+- systemd-sysctl: allow rw on binfm_misc_fs_t to set binfmt_misc status
+- Allow cupsd to manage cupsd_rw_etc_t lnk_files
+- Set temporary no-stub resolv.conf file from NetworkManager as net_conf_t
+- Allow spamc read aliases file
+- Mark configfs_t as mountpoint (bsc#1246080)
+- Allow systemd-machined watch cgroup files
+
 * Mon Oct 20 2025 Michael Catanzaro <mcatanzaro@redhat.com> - 42.13-2
 - Fix unexpanded macro in selinux_requires
 
