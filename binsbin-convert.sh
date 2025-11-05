@@ -39,6 +39,7 @@ fi
 EXTRA_BINSBIN_ENTRIES_WITHDUP="$OUTPUTDIR/extra_binsbin_entries_dup.txt"
 EXTRA_BINSBIN_ENTRIES="$OUTPUTDIR/extra_binsbin_entries.txt"
 EXTRA_BINSBIN_CIL="$OUTPUTDIR/extra_binsbin.cil"
+EXTRA_BINSBIN_MODULE="extra_binsbin"
 
 # Print only /usr/sbin entries
 grep ^/usr/sbin ${FILE_CONTEXTS} > ${EXTRA_BINSBIN_ENTRIES_WITHDUP}
@@ -89,6 +90,8 @@ do
 done < ${EXTRA_BINSBIN_ENTRIES} > ${EXTRA_BINSBIN_CIL}
 
 # Load module
-[ -s ${EXTRA_BINSBIN_CIL} ] &&
-/usr/sbin/semodule ${SEMODULEOPT} -i ${EXTRA_BINSBIN_CIL}
+if [ -s ${EXTRA_BINSBIN_CIL} ]; then
+  semodule -l |grep -qw ${EXTRA_BINSBIN_MODULE} && semodule -Nr ${EXTRA_BINSBIN_MODULE}
+  semodule ${SEMODULEOPT} -i ${EXTRA_BINSBIN_CIL}
+fi
 
