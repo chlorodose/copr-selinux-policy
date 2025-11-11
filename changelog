@@ -1,3 +1,17 @@
+* Tue Nov 11 2025 Zdenek Pytela <zpytela@redhat.com> - 42.15-1
+- Allow insights-client manage /etc symlinks
+- Allow insights-client get attributes of the rpm executable
+- Allow nfsidmapd search virt lib directories
+- Allow iotop stream connect to systemd-userdbd
+- Allow gnome-remote-desktop read sssd public files
+- Allow thumb_t stream connect to systemd-userdbd
+- Allow bluez dbus API passing unix domain sockets
+- Allow bluez dbus api pass sockets over dbus
+- Dontaudit systemd-generator connect to sssd over a unix stream socket
+- Allow init watch/watch_reads systemd-machined user ptys
+- Fix syntax error in userdomain.if
+- Allow ras-mc-ctl get attributes of the kmod executable
+
 * Fri Oct 24 2025 Zdenek Pytela <zpytela@redhat.com> - 42.14-1
 - Define file equivalency for /var/opt
 - Allow virtnodedev_t the perfmon capability
