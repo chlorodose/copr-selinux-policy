@@ -1,3 +1,13 @@
+* Thu Nov 20 2025 Zdenek Pytela <zpytela@redhat.com> - 42.16-1
+- Allow systemd-ssh-issue read kernel sysctls
+- fix: bz2279215 Allow speech-dispatcher access to user home/cache files
+- Allow create kerberos files in postgresql db home
+- Fix files_delete_boot_symlinks() to contain delete_lnk_files_pattern
+- Allow shell comamnds in locate systemd service (bsc#1246559)
+- Introduce initrc_nnp_daemon_domain interface
+- Label /var/lib/cosmic-greeter with xdm_var_lib_t
+- Allow setroubleshoot-fixit get attributes of xattr fs
+
 * Tue Nov 11 2025 Zdenek Pytela <zpytela@redhat.com> - 42.15-1
 - Allow insights-client manage /etc symlinks
 - Allow insights-client get attributes of the rpm executable
