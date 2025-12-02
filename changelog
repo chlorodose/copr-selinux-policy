@@ -1,3 +1,13 @@
+* Tue Dec 02 2025 Zdenek Pytela <zpytela@redhat.com> - 42.18-1
+- Allow KDE Plasma Login Manager to function as a display manager
+- Allow mdadm search filesystem_type directories
+- Update policy for dhcpc_hook_t
+- Label /usr/libexec/dhcpcd-run-hooks with dhcpc_hook_exec_t
+- Allow staff role read/write cockpit-session unix stream sockets
+- Allow stap server read virtual memory sysctls
+- Allow system_mail_t read apache system content conditionally
+- Allow login_userdomain read lastlog
+
 * Tue Nov 25 2025 Zdenek Pytela <zpytela@redhat.com> - 42.17-1
 - Allow sshd-net read and write to sshd vsock socket
 - Update ktls policy
