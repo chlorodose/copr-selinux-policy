@@ -1,3 +1,15 @@
+* Fri Dec 05 2025 Zdenek Pytela <zpytela@redhat.com> - 42.19-1
+- Allow passwd read and write a sshd-session unnamed pipes
+- Allow sshd-auth capabilities
+- Allow sshd-auth read network sysctls
+- Label /run/insights-client.ppid with insights_client_run_t
+- fix: unbreak thumbnailing for Thunar/tumblerd
+- Add files_mounton_generic_tmp_dirs() interface
+- Add the rpm_signal() interface
+- Allow session_bus_type get the attributes of the pidfs filesystem
+- Allow pcscd get the attributes of the pidfs filesystem
+- Allow sssd get the attributes of the pidfs filesystem
+
 * Tue Dec 02 2025 Zdenek Pytela <zpytela@redhat.com> - 42.18-1
 - Allow KDE Plasma Login Manager to function as a display manager
 - Allow mdadm search filesystem_type directories
