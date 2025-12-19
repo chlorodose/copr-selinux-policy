@@ -1,3 +1,17 @@
+* Fri Dec 19 2025 Zdenek Pytela <zpytela@redhat.com> - 42.20-1
+- Support cockpit privileged access for the staff user
+- Update su_domain_type policy for kerberized su
+- Allow sshd-session inherit limits from its parent process
+- Allow systemd-machined read virtd process state
+- Allow kl2tpd create and use netlink_generic_socket
+- Update policy for redfish-finder
+- Label the greetd login manager framework as a display manager
+- Allow sshd-auth get attributes of sshd vsock socket
+- Confine redfish_finder - host api discovery service
+- Allow iptables read firewalld process state
+- Allow tuned_t use its private tmpfs files
+- The commit addresses the following AVC denials:
+
 * Fri Dec 05 2025 Zdenek Pytela <zpytela@redhat.com> - 42.19-1
 - Allow passwd read and write a sshd-session unnamed pipes
 - Allow sshd-auth capabilities
