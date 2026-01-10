@@ -3,7 +3,6 @@
 DISTGIT_PATH=$(pwd)
 
 FEDORA_VERSION=rawhide
-FEDORA_VERSION=v42.20
 DOCKER_FEDORA_VERSION=master
 DISTGIT_BRANCH=rawhide
 REPO_SELINUX_POLICY=${REPO_SELINUX_POLICY:-https://github.com/fedora-selinux/selinux-policy}

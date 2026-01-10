@@ -1,3 +1,23 @@
+* Sat Jan 10 2026 Zdenek Pytela <zpytela@redhat.com> - 42.21-1
+- Allow sshd_net_t ioctl on unix_stream_socket of sshd_session_t
+- Allow sshd-session read, write, and map ica tmpfs files
+- Allow aide get attributes of a filesystem with extended attributes
+- Set correct label for glycin fontconfig (bsc#1253682)
+- Set correct gstreamer directory label for gnome-desktop-thumbnailer (bsc#1253682)
+- Logwatch zz-runtime uses uptime (bsc#1255862)
+- Add auth_login_pgm_signull interface (bsc#1255862)
+- Introduce systemd_cryptsetup_generator_var_run_t file type (bsc#1244459)
+- Allow l2tpd_t access to netlink and sysfs
+- Label miscellaneous /dev/papr-* devices
+- Allow qemu-ga to skip authentication
+- Revert "Allow systemd-coredump signull containers"
+- Allow systemd-coredump signull containers
+- Allow virtqemud setattr dri devices
+- Allow irqbalance create and use netlink generic socket
+- Allow thumb_t connect to XDM over a unix domain stream socket
+- Allow systemd-homework to remove ~/.identity-blob
+- Revert "Allow kl2tpd create and use netlink_generic_socket"
+
 * Fri Dec 19 2025 Zdenek Pytela <zpytela@redhat.com> - 42.20-1
 - Support cockpit privileged access for the staff user
 - Update su_domain_type policy for kerberized su
