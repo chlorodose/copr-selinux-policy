@@ -1,3 +1,19 @@
+* Fri Jan 23 2026 Zdenek Pytela <zpytela@redhat.com> - 42.22-1
+- Allow thumb_t stream connect to systemd-machined
+- Allow thumb_t stream connect to systemd-homed
+- Allow aide get attributes of tmpfs and devtmpfs filesystems
+- Allow sshd noatsecure on sshd-session execution
+- Confine rhc-worker-playbook.worker and rhc-playbook-verifier
+- Allow kernel_t to read/write all domains' pipes
+- Allow domain read sysfs files
+- allow abrt_dump_oops to write to init sockets
+- Add insights_client service interfaces
+- Allow plasma login manager stop login services
+- Allow NM nvme dispatcher script start systemd services
+
+* Sat Jan 17 2026 Fedora Release Engineering <releng@fedoraproject.org> - 42.21-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_44_Mass_Rebuild
+
 * Sat Jan 10 2026 Zdenek Pytela <zpytela@redhat.com> - 42.21-1
 - Allow sshd_net_t ioctl on unix_stream_socket of sshd_session_t
 - Allow sshd-session read, write, and map ica tmpfs files
