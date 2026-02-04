@@ -1,3 +1,19 @@
+* Wed Feb 04 2026 Zdenek Pytela <zpytela@redhat.com> - 42.23-1
+- Allow thumbnailer mount on fonts cache directories
+- Support confined users usage of bubblewrap
+- Allow vdagent get attributes of the pidfs filesystem
+- Allow sshd-session inherit limits from its parent sshd process
+- Revert "Allow sshd-session inherit limits from its parent process"
+- Allow sshd-session read network sysctls
+- Add the fs_write_tmpfs_files() interface
+- Update gpg policy for interactions with rhc-playbook-verifier
+- Allow rhc_playbook_verifier_t stream connect to itself
+- Update policy for rhc-worker-playbook
+- Allow sudodomain connect to gkeyringd over a unix stream socket
+- Allow tlshd communication to unconfined_t over a tcp socket
+- Allow tlshd write generic certificates
+- Allow thumbnailer connect to abrt over a unix stream socket
+
 * Fri Jan 23 2026 Zdenek Pytela <zpytela@redhat.com> - 42.22-1
 - Allow thumb_t stream connect to systemd-machined
 - Allow thumb_t stream connect to systemd-homed
