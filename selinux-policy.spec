@@ -28,7 +28,7 @@ Source2: selinux-policy.conf
 
 # Tool helps during policy development, to expand system m4 macros to raw allow rules
 # Git repo: https://github.com/fedora-selinux/macro-expander.git
-Source3: macro-expander
+Source3: https://raw.githubusercontent.com/fedora-selinux/macro-expander/76939da7d8246c9b21a60b3b96ca04d6288d4a25/macro-expander.sh
 
 # Include SELinux policy for container from separate container-selinux repo
 # Git repo: https://github.com/containers/container-selinux.git
