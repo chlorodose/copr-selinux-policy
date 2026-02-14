@@ -22,7 +22,7 @@ Name: selinux-policy
 Version: 42.24
 Release: 1%{?dist}
 License: GPL-2.0-or-later
-Source: %{giturl}/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
+Source: https://github.com/fedora-selinux/selinux-policy/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 Source1: Makefile.devel
 Source2: selinux-policy.conf
 
@@ -50,7 +50,9 @@ Source40: binsbin-convert.sh
 # Provide rpm macros for packages installing SELinux modules
 Source5: rpm.macros
 
-Url: %{giturl}
+Patch101: https://gist.githubusercontent.com/chlorodose/11e144d9f8a22942ef95e47ff5b77807/raw/b62ef074bc7afc1cc337ecb62862ddc87635557f/0001-Add-bcachefs-filesystem-support.patch
+
+Url: https://github.com/fedora-selinux/selinux-policy
 BuildArch: noarch
 BuildRequires: python3 gawk checkpolicy >= %{CHECKPOLICYVER} m4 policycoreutils-devel >= %{POLICYCOREUTILSVER} bzip2
 BuildRequires: make
