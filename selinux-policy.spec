@@ -32,7 +32,7 @@ Source3: macro-expander
 
 # Include SELinux policy for container from separate container-selinux repo
 # Git repo: https://github.com/containers/container-selinux.git
-Source4: container-selinux.tgz
+Source4: https://github.com/containers/container-selinux/archive/refs/tags/v2.245.0.tar.gz
 
 # modules enabled in -minimum policy
 Source16: modules-minimum.lst
