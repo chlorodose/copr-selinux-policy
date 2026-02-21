@@ -4,7 +4,6 @@
 %bcond mls      1
 
 # github repo with selinux-policy sources
-%global giturl https://github.com/fedora-selinux/selinux-policy
 %global commit 08735516ec1c70d4a1de713c6af4b7c7de0de20b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
@@ -32,7 +31,7 @@ Source3: https://raw.githubusercontent.com/fedora-selinux/macro-expander/76939da
 
 # Include SELinux policy for container from separate container-selinux repo
 # Git repo: https://github.com/containers/container-selinux.git
-Source4: https://github.com/containers/container-selinux/archive/refs/tags/v2.245.0.tar.gz
+Source4: https://github.com/containers/container-selinux/archive/refs/tags/v2.246.0.tar.gz
 
 # modules enabled in -minimum policy
 Source16: modules-minimum.lst
