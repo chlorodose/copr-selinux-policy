@@ -407,7 +407,7 @@ end
 
 %prep
 %autosetup -p 1 -n %{name}-%{commit}
-tar -C policy/modules/contrib -xf %{SOURCE4}
+tar -C policy/modules/contrib --strip-components=1 -xf %{SOURCE4}
 
 %install
 # Build targeted policy
