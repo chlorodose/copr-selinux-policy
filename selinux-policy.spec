@@ -419,7 +419,7 @@ touch %{buildroot}%{_sysconfdir}/sysconfig/selinux
 mkdir -p %{buildroot}%{_usr}/lib/tmpfiles.d/
 install -p -m0644 %{SOURCE2} %{buildroot}%{_usr}/lib/tmpfiles.d/
 mkdir -p %{buildroot}%{_bindir}
-install -p -m 755 %{SOURCE3} %{buildroot}%{_bindir}/
+install -p -m 755 %{SOURCE3} %{buildroot}%{_bindir}/macro-expander
 mkdir -p %{buildroot}%{_libexecdir}/selinux
 install -p -m 755  %{SOURCE37} %{buildroot}%{_libexecdir}/selinux
 install -p -m 755  %{SOURCE40} %{buildroot}%{_libexecdir}/selinux
