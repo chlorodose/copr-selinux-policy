@@ -19,7 +19,7 @@
 Summary: SELinux policy configuration
 Name: selinux-policy
 Version: 42.24
-Release: 1%{?dist}
+Release: fb%{?dist}
 License: GPL-2.0-or-later
 Source: https://github.com/fedora-selinux/selinux-policy/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 Source1: Makefile.devel
