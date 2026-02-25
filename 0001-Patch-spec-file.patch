@@ -1,0 +1,35 @@
+From be0c2a2fafc40d147a467256f253a86d9a570876 Mon Sep 17 00:00:00 2001
+From: chlorodose <chlorodose@chlorodose.me>
+Date: Mon, 2 Mar 2026 17:52:30 +0800
+Subject: [PATCH] Patch spec file
+
+---
+ selinux-policy.spec | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/selinux-policy.spec b/selinux-policy.spec
+index 69ae0b7..dbbe389 100644
+--- a/selinux-policy.spec
++++ b/selinux-policy.spec
+@@ -20,7 +20,7 @@
+ Summary: SELinux policy configuration
+ Name: selinux-policy
+ Version: 42.24
+-Release: 1%{?dist}
++Release: fb%{?dist}
+ License: GPL-2.0-or-later
+ Source: %{giturl}/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
+ Source1: Makefile.devel
+@@ -51,6 +51,9 @@ Source40: binsbin-convert.sh
+ Source5: rpm.macros
+ 
+ Url: %{giturl}
++Patch101: https://github.com/chlorodose/selinux-policy/commit/3c29ecede6353216a97a0b32bcd40bb11d382e66.patch
++Patch102: https://github.com/chlorodose/selinux-policy/commit/7b96177d6773ebccde67451db2731409d14cd908.patch
++Patch103: https://github.com/chlorodose/selinux-policy/commit/2aefe9752d779278b7ca3fa46358c640dd608e02.patch
+ BuildArch: noarch
+ BuildRequires: python3 gawk checkpolicy >= %{CHECKPOLICYVER} m4 policycoreutils-devel >= %{POLICYCOREUTILSVER} bzip2
+ BuildRequires: make
+-- 
+2.52.0
+
